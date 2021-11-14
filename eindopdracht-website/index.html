@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title>Ria Commandeur</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="left">Ria Commandeur</a></li>
+                <div id="nav" class="menu-right">
+                    <li><a href="aquarel.html" class="right">Aquarel</a></li>
+                    <!--                     <li><a href="">Acryl</a></li>
+                    <li><a href="">Illustraties</a></li> -->
+                    <li><a href="over.html" class="right">Over mij</a></li>
+                    <li><a href="contact.html" class="right">Contact</a></li>
+                </div>
+            </ul>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+            <script type="text/javascript">
+                $("#nav").addClass("js").before('<div id="menu" class="menu-right"><li>&#9776;</li></div>');
+                $("#menu").click(function () {
+                    $("#nav").toggle();
+                });
+                $(window).resize(function () {
+                    if (window.innerWidth > 768) {
+                        $("#nav").removeAttr("style");
+                    }
+                });
+            </script>
+        </nav>
+    </header>
+
+    <main>
+        <img class="image-index" src="Foto/svliegenzwammen2.jpg" />
+    </main>
+</body>
+
+</html>
