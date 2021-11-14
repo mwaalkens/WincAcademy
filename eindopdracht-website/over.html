@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title>Ria Commandeur</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="left">Ria Commandeur</a></li>
+                <div id="nav" class="menu-right">
+                    <li><a href="aquarel.html" class="right">Aquarel</a></li>
+                    <!--                     <li><a href="">Acryl</a></li>
+                    <li><a href="">Illustraties</a></li> -->
+                    <li><a href="over.html" class="right" id="active">Over mij</a></li>
+                    <li><a href="contact.html" class="right">Contact</a></li>
+                </div>
+            </ul>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+            <script type="text/javascript">
+                $("#nav").addClass("js").before('<div id="menu" class="menu-right"><li class="right">&#9776;</li></div>');
+                $("#menu").click(function () {
+                    $("#nav").toggle();
+                });
+                $(window).resize(function () {
+                    if (window.innerWidth > 768) {
+                        $("#nav").removeAttr("style");
+                    }
+                });
+            </script>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-img">
+            <img class="image-over" src="Foto/Ria2.jpg">
+        </div>
+        <div class="main">
+            <h1>Over mij</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit quisquam totam ad omnis, nam
+                cupiditate
+                laborum harum veritatis, quasi corrupti labore architecto excepturi? Asperiores ea odit voluptatem
+                quibusdam
+                perferendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur, harum. Eligendi quia
+                officiis,
+                ad pariatur assumenda ex reprehenderit nostrum consequatur. Voluptates alias fugit nulla nisi, placeat
+                nemo
+                accusantium assumenda magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+                delectus <br>
+                <br>
+                sed
+                modi eum aperiam laboriosam laudantium, tempora quidem voluptatibus, animi rem nobis? Voluptates rerum
+                quos
+                voluptatem consequatur aut? Aspernatur delectus sint eos placeat nesciunt facere maiores, voluptas
+                veniam
+                sit
+                reprehenderit, est totam? Eum optio rerum blanditiis sed libero aut cum molestiae at rem quia temporibus
+                illum
+                accusantium quo architecto, adipisci voluptatum nam nihil quisquam distinctio. Quaerat ducimus eos aut,
+                dolor
+                laboriosam officia quasi excepturi minus saepe quam nisi fugiat quod obcaecati corrupti ad error non
+                assumenda
+                numquam reiciendis veniam! Eaque ea recusandae dolores natus! Officiis maiores odit iure dolorem harum
+                vel
+                non
+                vitae molestiae voluptate? Deserunt officiis sed consequuntur hic quas voluptatibus architecto, nam
+                numquam <br>
+                id
+                earum odit voluptas mollitia maiores culpa autem voluptatem ratione error libero obcaecati neque
+                corrupti
+                accusamus omnis iste dolor. Amet optio, deserunt harum, laudantium nemo officia possimus libero
+                exercitationem
+                praesentium quas perferendis, omnis ut facere ipsum aperiam dolorum pariatur tenetur id molestias?
+                Consequuntur,
+                amet repellat. Alias nostrum aut voluptatum possimus. Ab omnis quisquam libero ut possimus suscipit
+                molestias
+                sequi id vel magni, quibusdam nisi odio eligendi ratione assumenda sed recusandae non officia voluptatem
+                aspernatur nemo fugiat corrupti saepe ea. Laudantium obcaecati eum commodi recusandae nihil?
+            </p>
+        </div>
+    </main>
+</body>
+
+</html>
