@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Guess the number</h1>
+
+<p>Welcome! What is your name
+    <button onclick="functionName()">Name</button> 
+</p>
+<p id=nameResult></p>
+
+<p id="guessResult"></p>
+
+
+<script>
+let actualNumber = Math.floor(Math.random() * (25 - 0 +1) + 0);
+ console.log(actualNumber);  
+function functionName() {
+
+  let person = prompt("Please enter your name");
+  if (person != null) {
+    document.getElementById("nameResult").innerHTML =
+    "Hello " + person + "! How are you today? Enter a number between 0 and 25 to start guessing <button onclick=\"functionNumber()\">Number</button>";
+
+  }
+}
+
+function functionNumber() {  
+  let guess = prompt("Please enter your guess");
+  if (guess != null & guess != actualNumber & guess >=0 & guess<=25) {
+    document.getElementById("guessResult").innerHTML =
+    "Unfortunately, that is not corrent. Enter another number";
+  } else if (guess != null & guess == actualNumber){
+  document.getElementById("guessResult").innerHTML =
+    "Congratulations, you have won the game! Click the button to reset <button onclick=\"functionReset()\">Reset</button> "; 
+} else{
+    document.getElementById("guessResult").innerHTML =
+    "Enter a number";  
+}}
+
+function functionReset(){
+ actualNumber = Math.floor(Math.random() * (25 - 0 +1) + 0);
+ console.log(actualNumber); 
+ document.getElementById("guessResult").innerHTML = ''; 
+ document.getElementById("nameResult").innerHTML = ''; 
+}
+</script>
+
+</body>
+</html>
